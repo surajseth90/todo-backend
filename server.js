@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 const dbURL =
@@ -55,6 +56,6 @@ app.put("/todo/update/:id", async (req, res) => {
   res.json(todo);
 });
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log("server start");
 });
