@@ -1,0 +1,31 @@
+GET http://localhost:8000/todos
+ 
+###
+
+POST http://localhost:8000/todo/new
+Content-Type: application/json
+
+{
+    "title":"my name is Sona",
+    "detail":"Sona"
+}
+
+###
+
+DELETE http://localhost:8000/todo/delete/63e87cb1d9c4cd3dfed10981
+
+###
+
+GET http://localhost:8000/todo/complete/63e5ef2177f053ad8609d4d6
+
+###
+
+
+PUT  http://localhost:8000/todo/update/63e87ceba77ba03ac21394f6
+Content-Type: application/json
+
+{
+    "title":"Suraj seth",
+    "detail":"Gupta ji n"
+}
+ 
